@@ -172,6 +172,19 @@ li:hover {
     font-size: 18px;
     color: #333;
 }
+.facebook{
+    background: linear-gradient(90deg, #0774f0, #05a4e8);
+    color: rgb(9, 9, 9);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;    
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+}
 .new {
     display: inline-block;
     background-color: yellow;
