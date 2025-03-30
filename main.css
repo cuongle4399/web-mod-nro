@@ -149,8 +149,8 @@ li:hover {
 
 
 .download-btn {
-    background: linear-gradient(90deg, #ff7c5e, #c605e8);
-    color: rgb(12, 12, 12);
+    background: linear-gradient(90deg, #ff5e62, #ff9966);
+    color: white;
     font-size: 20px;
     font-weight: bold;
     padding: 15px 30px;
@@ -172,21 +172,25 @@ li:hover {
     font-size: 18px;
     color: #333;
 }
-.facebook{
-    background: linear-gradient(90deg, #0774f0, #05a4e8);
-    color: rgb(9, 9, 9);
-    font-size: 20px;
-    font-weight: bold;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 10px;    
-    cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    text-decoration: none;
+.new {
     display: inline-block;
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 5px;
+    animation: move 2s infinite;
+    margin-left: 10px;
 }
-.footer{
-    text-align: right;
-    font-style: italic;
-    color: gray;
+
+@keyframes move {
+    0% {
+        transform: translateX(0); 
+    }
+    50% {
+        transform: translateX(10px); 
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
