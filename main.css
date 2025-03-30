@@ -195,7 +195,12 @@ li:hover {
     animation: move 2s infinite;
     margin-left: 10px;
 }
-
+.footer{
+    text-align: right;
+    color: #333;
+    font-size: 18px;
+    font-style: italic;
+}
 @keyframes move {
     0% {
         transform: translateX(0); 
