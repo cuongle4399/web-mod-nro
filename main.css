@@ -48,46 +48,6 @@ body {
     opacity: 0.7;
 }
 
-
-.nav_menu.vertical {
-    top: 0;
-    right: 0;
-    width: 200px;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.85);
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style: none;
-    z-index: 1000;
-}
-
-.nav_menu.vertical li {
-    margin: 15px 0;
-}
-
-.nav_menu.vertical a {
-    display: block;
-    width: 100%;
-    text-align: center;
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 10px;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 1px red;
-    border-radius: 6px;
-    transition: all 0.3s ease;
-}
-
-.nav_menu.vertical a:hover {
-    background-image: url(../img/btntab.png);
-    background-size: cover;
-    color: black;
-    font-weight: bold;
-}
 .container {
     background: rgba(255, 255, 255, 0.95);
     border-radius: 15px;
