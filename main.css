@@ -14,16 +14,37 @@ body {
     width: 100%;
 }
 
+/* Thay cho @apply bg-red-500 text-white px-2 py-1 rounded text-xs */
 .new {
-    @apply bg-red-500 text-white px-2 py-1 rounded text-xs;
+    background-color: #ef4444; /* Tailwind's red-500 */
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+    background: linear-gradient(
+        120deg,
+        #ff7a4d 0%,
+        #cd5717 40%,
+        #fff 50%,
+        #ff7875 60%,
+        #ca1a1d 100%
+    );
+    background-size: 200% auto;
+    color: rgb(11, 10, 10);
+    animation: shimmer 2s linear infinite;
 }
 
+/* Thay cho @apply mb-2 */
 .section ul li {
-    @apply mb-2;
+    margin-bottom: 0.5rem;
 }
 
+/* Thay cho @apply text-blue-400 */
 .section ul li strong {
-    @apply text-blue-400;
+    color: #60a5fa; /* Tailwind's blue-400 */
 }
 
 .carousel-inner {
@@ -48,8 +69,8 @@ body {
     font-size: 20px;
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 20;
 }
-
 
 .carousel-control.prev {
     left: -50px;
@@ -57,10 +78,6 @@ body {
 
 .carousel-control.next {
     right: -50px;
-}
-
-.carousel-control {
-    z-index: 20;
 }
 
 nav ul li a {
@@ -78,24 +95,6 @@ h1 {
 
 h2 {
     font-size: 1.75rem;
-}
-.new {
-    display: inline-block;
-    position: relative;
-    padding: 2px 6px;
-    background: linear-gradient(
-        120deg,
-        #ff7a4d 0%,
-        #cd5717 40%,
-        #fff 50%,
-        #ff7875 60%,
-        #ca1a1d 100%
-    );
-    background-size: 200% auto;
-    color: rgb(11, 10, 10);
-    font-weight: bold;
-    border-radius: 4px;
-    animation: shimmer 2s linear infinite;
 }
 
 @keyframes shimmer {
