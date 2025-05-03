@@ -12,11 +12,12 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%; 
+    transition: opacity 0.5s ease-in-out;
 }
 
-/* Thay cho @apply bg-red-500 text-white px-2 py-1 rounded text-xs */
 .new {
-    background-color: #ef4444; /* Tailwind's red-500 */
+    background-color: #ef4444; 
     color: white;
     padding: 0.25rem 0.5rem;
     border-radius: 0.25rem;
@@ -37,19 +38,20 @@ body {
     animation: shimmer 2s linear infinite;
 }
 
-/* Thay cho @apply mb-2 */
+
 .section ul li {
     margin-bottom: 0.5rem;
 }
 
-/* Thay cho @apply text-blue-400 */
+
 .section ul li strong {
-    color: #60a5fa; /* Tailwind's blue-400 */
+    color: #60a5fa; 
 }
 
 .carousel-inner {
     position: relative;
     height: 400px;
+    overflow: hidden;
 }
 
 .dot {
