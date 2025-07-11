@@ -1,0 +1,2 @@
+- Fix Quái bay cứ xà xuống mặt đất
+- Paint menu auto Item chuẩn từng giây và tránh nhai item khi đang dùng
