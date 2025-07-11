@@ -87,3 +87,38 @@ document.addEventListener('DOMContentLoaded', () => {
     updateCarousel();
     startAutoSlide();
 });
+// đọc file version
+fetch("Update Mod Nro/checkVersionNro.txt")
+  .then(res => {
+    if (!res.ok) throw new Error("Không thể tải phiên bản");
+    return res.text();
+  })
+  .then(version => {
+    document.getElementById("modVersion").innerText = version.trim();
+  })
+  .catch(err => {
+    document.getElementById("modVersion").innerText = "Không rõ";
+    console.error(err);
+  });
+  document.getElementById("btnShowUpdate").addEventListener("click", () => {
+  const contentDiv = document.getElementById("updateContent");
+ // đọc file update
+  if (contentDiv.classList.contains("hidden")) {
+    fetch("Update Mod Nro/TextUpdate.txt")
+      .then(res => {
+        if (!res.ok) throw new Error("Không thể tải nội dung cập nhật");
+        return res.text();
+      })
+      .then(text => {
+        contentDiv.textContent = text.trim();
+        contentDiv.classList.remove("hidden");
+      })
+      .catch(err => {
+        contentDiv.textContent = "Lỗi khi tải nội dung cập nhật.";
+        contentDiv.classList.remove("hidden");
+        console.error(err);
+      });
+  } else {
+    contentDiv.classList.add("hidden");
+  }
+});
