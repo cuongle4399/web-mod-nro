@@ -1,2 +1,9 @@
-- Fix Quái bay cứ xà xuống mặt đất
-- Paint menu auto Item chuẩn từng giây và tránh nhai item khi đang dùng
+-Cập nhập chức năng tự động giải Capcha [call API  web https://api.phamgiang.net/],
+-Lưu ý ấn Size game Pixel thì chức năng Giải Capcha mới hoạt động được nhé, còn size game 2D sẽ không giải được đâu
+-Sửa lỗi chức năng đánh khi đệ sủa
+-Paint lại Menu item chuẩn và thêm tab chọn skill khi Train quái, thêm ấn ở ngoài menu thì tự đóng menu không nhất thiết phải ấn lại rương
+-Nâng cấp chức năng auto vứt vật phẩm có thể thêm nhiều Item, hoặc thêm từ trong hành trang. Nhớ check Danh sách auto vứt trước khi vứt ko là cạp cứt
+-Sửa một số lỗi vặt của mod và QLTK
+-Lưu ý : Chức năng tool ConsoleUpdate cập nhập không hoạt động là do chưa có cài môi trường Framework 5.0
+-Để tải Net 5.0 có thể ấn link : https://builds.dotnet.microsoft.com/dotnet/Sdk/5.0.214/dotnet-sdk-5.0.214-win-x64.exe Hoặc Tải Net 5.0 cho app ConsoleUpdate.bat (file này sẽ có trong bản cập nhập 2.6) cài như Net 8.0 hồi QLTK
+-Mẹo kích hoạt Update ấn vào thư mục lưu game (hoặc thư mục gốc trên QLTK) xóa file versionUpdate.txt xok ấn ConsoleUpdate.exe là sẽ Update bản mới nhất
