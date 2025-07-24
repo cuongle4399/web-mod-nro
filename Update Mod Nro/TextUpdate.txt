@@ -1,4 +1,2 @@
-- Bỏ đóng băng quái (train lâu lâu lỗi update tọa độ hồi sinh quái sai)
-- Sửa chặn chặn click khi ấn vào vùng của  menu skill
-- Cập nhập thêm auto bò mộng nếu nick đủ 60ty và tới nv Dracula , Pui Pui j đó thì map train vàng sẽ là Hành tinh ngục tù (Map đầu tiên )hoặc có thể nhập id map up vang mong muốn tiện cho ae server Super.
-- Hiển thị trạng thái trong game nếu nick đó được lắp proxy
+- Fix Train Quái 
+- Fix nv train vang bò mộng ko random khu với map 155 (ngục tù)
