@@ -1,1 +1,2 @@
 - Fix tý random zone bò mộng, má nó code ngu như chó.
+- Fix proxy connect http
