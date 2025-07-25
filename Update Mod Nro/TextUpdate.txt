@@ -1,2 +1,1 @@
-- Fix Train Quái 
-- Fix nv train vang bò mộng ko random khu với map 155 (ngục tù)
+- Fix tý random zone bò mộng, má nó code ngu như chó.
