@@ -1,2 +1,2 @@
-- Fix tý random zone bò mộng, má nó code ngu như chó.
-- Fix proxy connect http
+-	Fix triệt để lỗi crash autobomong
+-	Paint trạng thái khi lớp proxy thành công
