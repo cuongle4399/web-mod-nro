@@ -1,2 +1,1 @@
--	Fix triệt để lỗi crash autobomong
--	Paint trạng thái khi lớp proxy thành công
+- Nâng cấp Xmap mượt mà hơn
