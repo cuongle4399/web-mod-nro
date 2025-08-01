@@ -1,1 +1,1 @@
-- Fix sạch bug xmap 2
+- Tăng tốc độ xmap 2
