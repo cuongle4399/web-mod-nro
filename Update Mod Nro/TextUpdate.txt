@@ -1,1 +1,3 @@
-- Tăng tốc độ xmap 2
+- Tăng độ mượt của Mod lên x2 lần
+- Paint focus quái vs boss
+- Fomat lại dame vào người hoặc quái để dể nhìn dame
