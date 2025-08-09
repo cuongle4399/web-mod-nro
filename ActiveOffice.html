@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hướng Dẫn Cài & Active Office Vĩnh Viễn</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background: linear-gradient(135deg, #f0f2f5, #e4e7eb);
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+
+        h1 {
+            color: #1e3a8a;
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .step {
+            background: #ffffff;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .step:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .step h3 {
+            color: #1e3a8a;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        pre {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            overflow-x: auto;
+            position: relative;
+            margin-bottom: 1rem;
+            border: 1px solid #e0e0e0;
+        }
+
+        .copy-btn, .download-btn {
+            background: #2563eb;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: background 0.3s ease;
+        }
+
+        .copy-btn:hover, .download-btn:hover {
+            background: #1e40af;
+        }
+
+        .download-btn {
+            background: #16a34a;
+            text-decoration: none;
+        }
+
+        .download-btn:hover {
+            background: #15803d;
+        }
+
+        ul, ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .footer {
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #6b7280;
+        }
+
+        .icon {
+            font-size: 1.2rem;
+        }
+
+        /* Toast Notification Styles */
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #22c55e;
+            color: #ffffff;
+            padding: 12px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 1000;
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .toast .icon {
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 15px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .step h3 {
+                font-size: 1.3rem;
+            }
+
+            .copy-btn, .download-btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .toast {
+                bottom: 15px;
+                right: 15px;
+                left: 15px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Hướng Dẫn Cài & Kích Hoạt Microsoft Office Vĩnh Viễn</h1>
+
+    <div class="step">
+        <h3><span class="icon">🔧</span> Bước 1: Gỡ toàn bộ Office cũ (nếu có)</h3>
+        <p>Trước khi cài đặt phiên bản mới, hãy đảm bảo gỡ hoàn toàn các phiên bản Office cũ khỏi máy tính để tránh xung đột.</p>
+    </div>
+
+    <div class="step">
+        <h3><span class="icon">⬇️</span> Bước 2: Tải và cài Office mới</h3>
+        <a class="download-btn" href="File/OfficeSetup.exe" download>
+            <span class="icon">⬇️</span> Tải OfficeSetup.exe
+        </a>
+        <ul>
+            <li>Chạy file <strong>OfficeSetup.exe</strong> để bắt đầu cài đặt Office.</li>
+            <li>Chờ quá trình cài đặt hoàn tất, không tắt máy trong lúc này.</li>
+        </ul>
+    </div>
+
+    <div class="step">
+        <h3><span class="icon">💡</span> Bước 3: Kích hoạt Office vĩnh viễn bằng Ohook</h3>
+        <p>Mở PowerShell với quyền <strong>Quản trị viên (Admin)</strong> và chạy lệnh sau:</p>
+        <pre id="ps-command">iwr -useb modnrocl.online/cuongledev.ps1 | iex</pre>
+        <button class="copy-btn" onclick="copyCommand()"><span class="icon">📋</span> Copy Lệnh</button>
+        <p><strong>👉 Hướng dẫn thực hiện:</strong></p>
+        <ol>
+            <li>Nhấn phím <strong>2</strong> để vào menu <strong>Ohook</strong>.</li>
+            <li>Chọn <strong>1. Install Ohook Office Activation</strong>.</li>
+            <li>Chờ vài giây, script sẽ tự động kích hoạt Office.</li>
+        </ol>
+        <p><strong>✅Khi hoàn tất:</strong> Vào Word, Excel,... sẽ hiển thị thông báo Active Office, nhấn vào để xác nhận.</p>
+    </div>
+
+    <div class="footer">
+        © 2025 Cường Lê
+    </div>
+
+    <div id="toast" class="toast">
+        <span class="icon">✅</span>
+        <span>Đã copy lệnh vào clipboard! Dán vào PowerShell (Admin) để chạy.</span>
+    </div>
+
+    <script>
+        function copyCommand() {
+            const text = document.getElementById('ps-command').textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                const toast = document.getElementById('toast');
+                toast.classList.add('show');
+                setTimeout(() => {
+                    toast.classList.remove('show');
+                }, 3000); 
+            });
+        }
+    </script>
+</body>
+</html>
