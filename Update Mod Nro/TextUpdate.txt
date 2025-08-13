@@ -1,1 +1,5 @@
-- Giảm cheat từ 3.0 xuống 2.7
+- Fix và update theo auto up de tu
+- cho bật tắt autologin bên menu more
+- Tối ưu xmap2
+- Hiển thị sét kích hoạt fix ok hơn
+- fix lỗi một số auto
