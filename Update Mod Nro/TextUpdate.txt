@@ -1,5 +1,5 @@
-- Fix và update theo auto up de tu
-- cho bật tắt autologin bên menu more
-- Tối ưu xmap2
-- Hiển thị sét kích hoạt fix ok hơn
-- fix lỗi một số auto
+- Fix toàn bộ auto giảm khả năng crash 
+- Tăng nhẹ độ mượt xmap
+- Thêm điều chỉnh Farm boss Nappa chọn loại boss(Kuku,mập đầu đinh, rambo)
+- Sửa Auto bán đồ, cất đồ
+- Điều chỉnh skill tấn công boss, tiêu diệt người bật cờ sẽ sử dụng skill theo bảng menu skill train ở rương
