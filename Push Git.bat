@@ -34,11 +34,17 @@ echo Commit message: %commitMsg%
 echo -------------------------------------------------
 
 REM ---- Thực hiện git ----
-git add .        || (echo ❌ Git add lỗi! & pause & exit /b)
-git commit -m "%commitMsg%" || (echo ❌ Commit thất bại! & pause & exit /b)
-git push origin master || (echo ❌ Push thất bại! & pause & exit /b)
+git add . || (echo ❌ Git add lỗi! & pause & exit /b)
 
-echo.
-echo ✅ Commit & Push thành công!
+git commit -m "%commitMsg%" && (
+    git push origin master && (
+        echo ✅ Commit & Push thành công!
+    ) || (
+        echo ❌ Push thất bại!
+    )
+) || (
+    echo ⚠️ Không có thay đổi để commit!
+)
+
 pause
 endlocal
