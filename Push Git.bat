@@ -34,21 +34,11 @@ echo Commit message: %commitMsg%
 echo -------------------------------------------------
 
 REM ---- Thực hiện git ----
-git add .
-git commit -m "%commitMsg%"
-if errorlevel 1 (
-    echo ❌ Commit thất bại!
-    pause
-    exit /b
-)
+git add .        || (echo ❌ Git add lỗi! & pause & exit /b)
+git commit -m "%commitMsg%" || (echo ❌ Commit thất bại! & pause & exit /b)
+git push origin master || (echo ❌ Push thất bại! & pause & exit /b)
 
-git push origin master
-if errorlevel 1 (
-    echo ❌ Push thất bại!
-    pause
-    exit /b
-)
-
+echo.
 echo ✅ Commit & Push thành công!
 pause
 endlocal
