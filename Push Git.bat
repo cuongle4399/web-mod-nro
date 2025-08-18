@@ -1,51 +1,38 @@
 @echo off
 setlocal enabledelayedexpansion
 
-REM ---- Đọc nội dung file ----
-set "file=Update Mod Nro\checkVersionNro.txt"
-set "fileContent="
+REM --- Đường dẫn file version ---
+set "VERSION_FILE=Update Mod Nro\checkVersionNro.txt"
 
-if exist "%file%" (
-    for /f "usebackq delims=" %%a in ("%file%") do (
-        set "fileContent=%%a"
-        goto :doneRead
-    )
+REM --- Kiểm tra file tồn tại ---
+if not exist "%VERSION_FILE%" (
+    echo ❌ File %VERSION_FILE% không tồn tại!
+    pause
+    exit /b
 )
 
-:doneRead
-if "%fileContent%"=="" set "fileContent=NoVersion"
-
-REM ---- Lấy ngày giờ hiện tại ----
-for /f "tokens=1-4 delims=/ " %%a in ('date /t') do (
-    set dd=%%a
-    set mm=%%b
-    set yyyy=%%c
-)
-for /f "tokens=1-2 delims=: " %%a in ('time /t') do (
-    set hh=%%a
-    set min=%%b
+REM --- Đọc nội dung file ---
+set "VERSION_CONTENT="
+for /f "usebackq delims=" %%a in ("%VERSION_FILE%") do (
+    set "VERSION_CONTENT=%%a"
 )
 
-REM ---- Tạo commit message ----
-set commitMsg=Update %fileContent% on %yyyy%-%mm%-%dd% %hh%:%min%
-
-echo -------------------------------------------------
-echo Commit message: %commitMsg%
-echo -------------------------------------------------
-
-REM ---- Thực hiện git ----
-git add . || (echo ❌ Git add lỗi! & pause & exit /b)
-
-git commit -m "%commitMsg%" && (
-    echo ✅ Commit thành công, tiến hành Push...
-    git push origin master && (
-        echo ✅ Push thành công!
-    ) || (
-        echo ❌ Push thất bại!
-    )
-) || (
-    echo ⚠️ Không có thay đổi để commit, bỏ qua Push!
+REM --- Lấy thời gian hiện tại ---
+for /f "tokens=1-4 delims=/ " %%a in ("%date%") do (
+    set "TODAY=%%a-%%b-%%c"
 )
+set "NOW=%time:~0,8%"
 
+REM --- Thực hiện Git ---
+echo 🔄 Đang add thay đổi...
+git add .
+
+echo 🔄 Đang commit...
+git commit -m "Update %VERSION_CONTENT% - %TODAY% %NOW%"
+
+echo 🔄 Đang push lên origin master...
+git push origin master
+
+echo ✅ Commit & Push thành công!
 pause
-endlocal
+exit /b
