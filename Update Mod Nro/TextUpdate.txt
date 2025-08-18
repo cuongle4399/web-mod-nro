@@ -1,5 +1,2 @@
-- Fix toàn bộ auto giảm khả năng crash 
-- Tăng nhẹ độ mượt xmap
-- Thêm điều chỉnh Farm boss Nappa chọn loại boss(Kuku,mập đầu đinh, rambo)
-- Sửa Auto bán đồ, cất đồ
-- Điều chỉnh skill tấn công boss, tiêu diệt người bật cờ sẽ sử dụng skill theo bảng menu skill train ở rương
+- Fix Auto Nhặt item Pet, Fix đệ sủa mà ko pem
+- Fix Socket QLTK
