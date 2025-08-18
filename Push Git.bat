@@ -37,13 +37,14 @@ REM ---- Thực hiện git ----
 git add . || (echo ❌ Git add lỗi! & pause & exit /b)
 
 git commit -m "%commitMsg%" && (
+    echo ✅ Commit thành công, tiến hành Push...
     git push origin master && (
-        echo ✅ Commit & Push thành công!
+        echo ✅ Push thành công!
     ) || (
         echo ❌ Push thất bại!
     )
 ) || (
-    echo ⚠️ Không có thay đổi để commit!
+    echo ⚠️ Không có thay đổi để commit, bỏ qua Push!
 )
 
 pause
