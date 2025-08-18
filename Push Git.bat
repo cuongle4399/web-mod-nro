@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 REM ---- Đọc nội dung file ----
-set "file=Mod Nro\checkVersionNro.txt"
+set "file=Update Mod Nro\checkVersionNro.txt"
 set "fileContent="
 
 if exist "%file%" (
