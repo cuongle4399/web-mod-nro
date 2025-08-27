@@ -1,2 +1,2 @@
-- Fix Auto Nhặt item Pet, Fix đệ sủa mà ko pem
-- Fix Socket QLTK
+- Fix Auto Whis
+- Viết lại autoBomong bây giờ sẽ không bao giờ crack nữa
