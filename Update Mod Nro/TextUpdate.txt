@@ -1,1 +1,7 @@
-- Tối ưu lại code thôi
+- Thêm autoItem cỏ,bùa đệ
+- Thêm Auto mua Item
+- Sửa xmap
+- Sửa các lỗi vặt và các auto
+- Trong thời gian tới sẽ cập nhập sửa đổi qltk bao sịn
+
+
