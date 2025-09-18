@@ -1,3 +1,2 @@
-- them giam cpu theo fps
-- djt moe mod rách crash nhiều quá
+- Fix loi crash Socket QLTK bao mượt hehe
 
