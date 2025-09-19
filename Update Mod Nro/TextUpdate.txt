@@ -1,2 +1,2 @@
-- Fix loi crash Socket QLTK bao mượt hehe
+- Fix loi QLTK them sua xoa
 
