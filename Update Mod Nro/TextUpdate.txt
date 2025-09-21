@@ -1,2 +1,4 @@
-- Fix loi QLTK them sua xoa lan thu 2 huhuhuhu djt moe mod ngu
+- Fix khong auto thu dau khi goback
+- Fix focus mob
+- Fix xmap next capsun
 
