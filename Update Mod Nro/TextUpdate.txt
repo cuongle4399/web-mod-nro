@@ -1,3 +1,3 @@
-- Update Tự động nhập code live húp code youtube sộp sộp
-- Fix lỗi map khu vực bang
+- Update xmap confirm menu theo text bao chuẩn, tránh game update sự kiện them item menu lỗi xmap
+- Fix tý auto boss nappa bỏ boss tấn công trong 10s mà không tụt máu
 
