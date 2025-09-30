@@ -1,2 +1,3 @@
 - Fix tý bò mộng
+- Ublock Train fake sử dung skill train với nhặt item
 
