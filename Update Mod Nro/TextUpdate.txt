@@ -1,4 +1,5 @@
 - Update cấu hình dò boss, tấn công, tele  boss theo name ở QLTK
 - Nâng Cấp AutoLogin có thể tự động login sau bảo trì hằng ngày hoặc bất ngờ
 - Fix lỗi hình ảnh ở size pixel
+- Fix tý xmap :((
 
