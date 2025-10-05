@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextBtn = carousel.querySelector('.carousel-control.next');
     const dotsContainer = carousel.querySelector('.carousel-dots');
     let currentIndex = 0;
-    let autoSlide;
 
     function updateCarousel() {
         items.forEach((item, i) => {
@@ -71,23 +70,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (touchEndX - touchStartX > 50) showSlide('prev');
     });
 
-    // Auto-slide every 5 seconds
-    function startAutoSlide() {
-        autoSlide = setInterval(() => {
-            showSlide('next');
-        }, 5000);
-    }
-
-    // Pause auto-slide on hover
-    carousel.addEventListener('mouseenter', () => clearInterval(autoSlide));
-    carousel.addEventListener('mouseleave', startAutoSlide);
-
     // Initialize
     createDots();
     updateCarousel();
-    startAutoSlide();
 });
-// đọc file version
+
+// Read version file
 fetch("Update Mod Nro/checkVersionNro.txt")
   .then(res => {
     if (!res.ok) throw new Error("Không thể tải phiên bản");
@@ -100,9 +88,10 @@ fetch("Update Mod Nro/checkVersionNro.txt")
     document.getElementById("modVersion").innerText = "Không rõ";
     console.error(err);
   });
-  document.getElementById("btnShowUpdate").addEventListener("click", () => {
+
+document.getElementById("btnShowUpdate").addEventListener("click", () => {
   const contentDiv = document.getElementById("updateContent");
- // đọc file update
+  // Read update file
   if (contentDiv.classList.contains("hidden")) {
     fetch("Update Mod Nro/TextUpdate.txt")
       .then(res => {
