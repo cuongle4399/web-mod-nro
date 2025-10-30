@@ -1,4 +1,2 @@
-- Update show thông tin đệ tử, paint hành trang rách và paitn mob rách ở Tab Giao Diện
-- Cho AutoTrain luôn train khi đang bật
-
-
+- Thêm chế độ next sự kiện nhận kẹo khi xmap
+- Xóa chức năng show thông tin sư phụ
