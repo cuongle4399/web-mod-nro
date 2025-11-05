@@ -186,37 +186,53 @@
         Tải Bản MOD <span id="modVersion" class="ml-1">Đang tải...</span>
     </a>
 <!-- ✅ CountAPI - Đếm lượt tải -->
-    <script>
-      // Đặt namespace & key duy nhất (đổi để tránh trùng với người khác)
-      const namespace = "modnrocuongle123";
-      const key = "downloadcount";
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const namespace = "modnrocuongle123";
+  const key = "downloadcount";
+  const downloadUrl = "https://www.mediafire.com/file/d5fb9pc3g9zq893/Nro_Cuong_Le.rar/file";
 
-      // Tạo phần hiển thị số lượt tải (dưới nút tải)
-      const counterDisplay = document.createElement("p");
-      counterDisplay.className = "text-sm text-gray-300 mt-2";
-      counterDisplay.innerHTML = 'Đã có <span id="downloadCount">0</span> lượt tải.';
-      document.querySelector("#Tai .flex").appendChild(counterDisplay);
+  const taiSection = document.querySelector("#Tai .flex");
+  if (!taiSection) return;
 
-      // Hiển thị giá trị hiện tại
-      fetch(`https://api.countapi.xyz/get/${namespace}/${key}`)
-        .then(res => res.json())
-        .then(data => {
-          document.getElementById("downloadCount").innerText = data.value ?? 0;
-        })
-        .catch(() => {
-          document.getElementById("downloadCount").innerText = "0";
-        });
+  // Tạo dòng hiển thị lượt tải
+  const counterDisplay = document.createElement("p");
+  counterDisplay.className = "text-sm text-gray-300 mt-2";
+  counterDisplay.innerHTML = 'Đã có <span id="downloadCount">0</span> lượt tải.';
+  taiSection.appendChild(counterDisplay);
 
-      // Khi người dùng bấm vào nút tải
-      document.getElementById("downloadLink").addEventListener("click", () => {
-        fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`)
-          .then(res => res.json())
-          .then(data => {
-            document.getElementById("downloadCount").innerText = data.value;
-          });
-        // vẫn để link MediaFire hoạt động bình thường
-      });
-    </script>
+  // Hiển thị số lượt tải hiện tại
+  fetch(`https://api.countapi.xyz/get/${namespace}/${key}`)
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById("downloadCount").innerText = data.value ?? 0;
+    })
+    .catch(() => {
+      document.getElementById("downloadCount").innerText = "0";
+    });
+
+  // Khi bấm nút tải
+  const btn = document.getElementById("downloadLink");
+  btn.addEventListener("click", async (event) => {
+    event.preventDefault(); // chặn mở link ngay lập tức
+    try {
+      // Gọi CountAPI để tăng lượt tải
+      const res = await fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`);
+      const data = await res.json();
+      document.getElementById("downloadCount").innerText = data.value;
+
+      // Đợi 0.3 giây rồi mở link tải (đảm bảo request gửi đi)
+      setTimeout(() => {
+        window.open(downloadUrl, "_blank");
+      }, 300);
+    } catch (err) {
+      // Nếu lỗi thì vẫn mở link bình thường
+      window.open(downloadUrl, "_blank");
+    }
+  });
+});
+</script>
+
     <div class="mb-6">
         <button id="btnShowUpdate"
                 class="inline-flex items-center gap-2 bg-yellow-500 text-white px-5 py-2 rounded hover:bg-yellow-600 transition shadow-md">
