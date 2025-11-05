@@ -15,9 +15,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="main.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .new { @apply bg-yellow-500 text-black px-2 py-0.5 rounded text-xs font-bold; }
-    </style>
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans">
     <header class="bg-gray-800 shadow sticky top-0 z-50">
@@ -118,7 +115,6 @@
                 <li><strong>o:</strong> Auto vào NRO đen</li>
                 <li><strong>f:</strong> Dùng bông tai/ không có bông tai sẽ hợp thể lưỡng long nhất thể</li>
                 <li><strong>g:</strong> Gửi giao dịch</li>
-                <li><strong>v:</strong> Mở menu chức năng BOSS</li>
                 <li><strong>SHIFT + C:</strong> Bật chế độ siêu tối ưu CPU cắn CPU ít nhất có thể nhưng sẽ gây giật lag mỗi tab game được bật, hỗ trợ ae bật nhiều tab để auto buff đậu, buff hs <span class="new">New</span></li>
                 <li><strong>SHIFT + A:</strong> Mặc nhanh set 1</li>
                 <li><strong>SHIFT + Z:</strong> Mặc nhanh set 2</li>
@@ -179,7 +175,6 @@
                 <li><strong>Sắp xếp tab game nhanh:</strong> Sắp xếp các tab game dễ dàng và nhanh chóng.</li>
                 <li><strong>Một số chức năng game:</strong> Nhiều lắm nên tự mở QLTK xok ấn mục chức năng rồi xem</li>
                 <li><strong>Thông báo khi có phiên bản mới:</strong> QLTK tự động thông báo khi có bản cập nhật mới.</li>
-                <li><strong>Lưu ý:</strong> Nếu phần mềm báo chưa có framework 8.0 thì ấn vào file có tên: "Tải framework 8.0.bat"</li>
             </ul>
         </section>
 
@@ -195,11 +190,6 @@
                     Tải Bản MOD <span id="modVersion">v1.0</span>
                 </a>
 
-                <!-- Lượt tải -->
-                <p class="text-sm text-gray-300 mt-2">
-                    Đã có <span id="downloadCount">0</span> lượt tải.
-                </p>
-
                 <!-- Nút cập nhật -->
                 <div class="mb-6">
                     <button id="btnShowUpdate"
@@ -207,15 +197,6 @@
                         <i class="fas fa-info-circle"></i>
                         Xem chi tiết cập nhật
                     </button>
-                </div>
-
-                <!-- Nội dung cập nhật -->
-                <div id="updateContent"
-                     class="hidden mt-4 max-w-3xl bg-gray-800 p-5 rounded-lg border-l-4 border-yellow-500 text-sm text-left whitespace-pre-wrap shadow-inner">
-                    - Sửa lỗi không tăng lượt tải<br>
-                    - Tối ưu hiệu suất CountAPI<br>
-                    - Thêm fallback khi mạng lỗi<br>
-                    - Cập nhật giao diện mượt hơn
                 </div>
 
                 <!-- Liên hệ -->
@@ -227,118 +208,6 @@
             </div>
         </section>
     </main>
-
-    <!-- ✅ CountAPI - Đã fix lỗi không tăng lượt tải -->
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const namespace = "modnrocuongle123";
-            const key = "downloadcount";
-            const downloadUrl = "https://www.mediafire.com/file/d5fb9pc3g9zq893/Nro_Cuong_Le.rar/file";
-            const countDisplay = document.getElementById("downloadCount");
-            const downloadBtn = document.getElementById("downloadLink");
-
-            let currentCount = 0;
-
-            // Lấy lượt tải hiện tại
-            const updateCounter = async () => {
-                try {
-                    const res = await fetch(`https://api.countapi.xyz/get/${namespace}/${key}`, { cache: "no-store" });
-                    if (res.ok) {
-                        const data = await res.json();
-                        currentCount = data.value;
-                    }
-                } catch (err) {
-                    console.warn("CountAPI get failed, using local count");
-                } finally {
-                    countDisplay.innerText = currentCount;
-                }
-            };
-
-            // Tăng lượt tải
-            const incrementCounter = async () => {
-                try {
-                    const res = await fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`, {
-                        method: 'GET',
-                        mode: 'no-cors' // Bỏ CORS check
-                    });
-                    // Không đọc được response do no-cors, nhưng vẫn tăng
-                    currentCount++;
-                    countDisplay.innerText = currentCount;
-                } catch (err) {
-                    // Vẫn tăng local dù API lỗi
-                    currentCount++;
-                    countDisplay.innerText = currentCount;
-                }
-            };
-
-            // Khởi động
-            updateCounter();
-
-            // Xử lý click tải
-            downloadBtn.addEventListener("click", async (e) => {
-                e.preventDefault();
-                await incrementCounter();
-                setTimeout(() => {
-                    window.open(downloadUrl, "_blank");
-                }, 300);
-            });
-
-            // Nút cập nhật
-            document.getElementById("btnShowUpdate").addEventListener("click", () => {
-                const content = document.getElementById("updateContent");
-                content.classList.toggle("hidden");
-            });
-        });
-    </script>
-
-    <!-- Carousel JS -->
-    <script>
-        // Carousel đơn giản
-        document.addEventListener("DOMContentLoaded", () => {
-            const carousel = document.querySelector(".carousel-inner");
-            const items = document.querySelectorAll(".carousel-item");
-            const prev = document.querySelector(".carousel-control.prev");
-            const next = document.querySelector(".carousel-control.next");
-            const dotsContainer = document.querySelector(".carousel-dots");
-
-            let index = 0;
-
-            const createDots = () => {
-                items.forEach((_, i) => {
-                    const dot = document.createElement("button");
-                    dot.className = `w-3 h-3 rounded-full mx-1 ${i === 0 ? 'bg-blue-500' : 'bg-gray-600'}`;
-                    dot.addEventListener("click", () => goToSlide(i));
-                    dotsContainer.appendChild(dot);
-                });
-            };
-
-            const updateDots = () => {
-                const dots = dotsContainer.querySelectorAll("button");
-                dots.forEach((dot, i) => {
-                    dot.className = `w-3 h-3 rounded-full mx-1 ${i === index ? 'bg-blue-500' : 'bg-gray-600'}`;
-                });
-            };
-
-            const goToSlide = (i) => {
-                index = i;
-                carousel.style.transform = `translateX(-${index * 100}%)`;
-                updateDots();
-            };
-
-            prev.addEventListener("click", () => {
-                index = (index - 1 + items.length) % items.length;
-                goToSlide(index);
-            });
-
-            next.addEventListener("click", () => {
-                index = (index + 1) % items.length;
-                goToSlide(index);
-            });
-
-            createDots();
-        });
-    </script>
-
     <script src="javascript.js"></script>
 </body>
 </html>
