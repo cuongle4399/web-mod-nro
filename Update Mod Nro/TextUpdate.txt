@@ -5,3 +5,4 @@
 - Cho chọn quái khi train ở menu
 - Fix cho đệ về nhà của auto yardat nhanh hơn
 - Paint thêm HSD của các item trong hành trang sư, đệ và rương đồ
+- Train luôn spam dùng tdlt nếu còn
