@@ -1,2 +1,7 @@
-- Thêm chế độ next sự kiện nhận kẹo khi xmap
-- Xóa chức năng show thông tin sư phụ
+- Fix mọi confirm npc cho mọi auto về kẹo hallowen
+- Thêm auto hợp thể bông tai ở autoTrain
+- Thêm auto né Boss khi train quái, up đệ tử ở autotrain – có thể nhập tên boss muốn né ở autoBoss QLTK, không nhập tức là boss nào cx né
+- Thêm chức năng nhập nick vào QLTK thông qua File txt
+- Cho chọn quái khi train ở menu
+- Fix cho đệ về nhà của auto yardat nhanh hơn
+- Paint thêm HSD của các item trong hành trang sư, đệ và rương đồ
