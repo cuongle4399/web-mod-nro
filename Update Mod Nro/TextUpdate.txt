@@ -1,8 +1,4 @@
-- Fix mọi confirm npc cho mọi auto về kẹo hallowen
-- Thêm auto hợp thể bông tai ở autoTrain
-- Thêm auto né Boss khi train quái, up đệ tử ở autotrain – có thể nhập tên boss muốn né ở autoBoss QLTK, không nhập tức là boss nào cx né
-- Thêm chức năng nhập nick vào QLTK thông qua File txt
-- Cho chọn quái khi train ở menu
-- Fix cho đệ về nhà của auto yardat nhanh hơn
-- Paint thêm HSD của các item trong hành trang sư, đệ và rương đồ
-- Train luôn spam dùng tdlt nếu còn
+- Fix không thể sử dụng goback với auto hợp thể và auto né boss khi map 0 có quái
+- Fix Train fake tdlt lỗi k0 train khi goback
+- Fix autoBoMong lỗi chọn nv khó mà thành siêu khó
+
