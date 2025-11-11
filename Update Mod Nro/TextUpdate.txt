@@ -1,4 +1,6 @@
-- Fix không thể sử dụng goback với auto hợp thể và auto né boss khi map 0 có quái
-- Fix Train fake tdlt lỗi k0 train khi goback
-- Fix autoBoMong lỗi chọn nv khó mà thành siêu khó
+- Fix lỗi quái đang train bị ẩn
+- Điều chỉnh lại menu Train sịn đét
+- Cải tiến AutoBoMong làm nhiệm vụ pem người thành tự pem người bật cờ trong khu của map được nhập từ người chơi (mặc định là là map vách núi của nhân vật đó và khu 0). Nhớ là phải kẹp nick (vác nick qua map + khu đó xok mở auto kẹp nick ở nick đó) 
+- Fix Auto Login mượt hơn
+- Thêm hiện thị danh sách map trong phần thông báo hệ thông mob. Thứ tào lao : )))
 
