@@ -1,1 +1,3 @@
-- Fix ty Xamp
+- Fix lỗi hình ảnh quái
+- Fix xmap bị kẹt làng về nhà
+- Fix train khi giảm FPS vẫn train ko bị giảm tốc độ
