@@ -1,3 +1,4 @@
 - Fix lỗi hình ảnh quái
 - Fix xmap bị kẹt làng về nhà
 - Fix train khi giảm FPS vẫn train ko bị giảm tốc độ
+- Cho giam cpu fps thấp nhất từ 30 xuống 3 dành cho mấy con lợn cố chấp train quái trong vps :)
