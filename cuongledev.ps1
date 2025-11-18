@@ -4,8 +4,8 @@
 
 if (-not $args) {
     Write-Host ''
-    Write-Host 'Need help? Check our homepage: ' -NoNewline
-    Write-Host 'https://massgrave.dev' -ForegroundColor Green
+    Write-Host 'Cường Lê Mod Nro ' -NoNewline
+    Write-Host 'https://modnrocl.online/' -ForegroundColor Green
     Write-Host ''
 }
 
