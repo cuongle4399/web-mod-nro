@@ -1,4 +1,4 @@
-# This script is hosted on Cường Lê
+# This script is hosted on https://get.activated.win for https://massgrave.dev
 
 # Having trouble launching this script? Check https://massgrave.dev for help.
 
@@ -53,9 +53,9 @@ if (-not $args) {
     try { [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 } catch {}
 
     $URLs = @(
-        'https://raw.githubusercontent.com/massgravel/Microsoft-Activation-Scripts/ab6b572af940fa0ea4255b327eb6f69a274d6725/MAS/All-In-One-Version-KL/MAS_AIO.cmd',
-        'https://dev.azure.com/massgrave/Microsoft-Activation-Scripts/_apis/git/repositories/Microsoft-Activation-Scripts/items?path=/MAS/All-In-One-Version-KL/MAS_AIO.cmd&versionType=Commit&version=ab6b572af940fa0ea4255b327eb6f69a274d6725',
-        'https://git.activated.win/massgrave/Microsoft-Activation-Scripts/raw/commit/ab6b572af940fa0ea4255b327eb6f69a274d6725/MAS/All-In-One-Version-KL/MAS_AIO.cmd'
+        'https://raw.githubusercontent.com/massgravel/Microsoft-Activation-Scripts/4958ddf4744881b5b211a5b9ccd960018cca8710/MAS/All-In-One-Version-KL/MAS_AIO.cmd',
+        'https://dev.azure.com/massgrave/Microsoft-Activation-Scripts/_apis/git/repositories/Microsoft-Activation-Scripts/items?path=/MAS/All-In-One-Version-KL/MAS_AIO.cmd&versionType=Commit&version=4958ddf4744881b5b211a5b9ccd960018cca8710',
+        'https://git.activated.win/massgrave/Microsoft-Activation-Scripts/raw/commit/4958ddf4744881b5b211a5b9ccd960018cca8710/MAS/All-In-One-Version-KL/MAS_AIO.cmd'
     )
     Write-Progress -Activity "Downloading..." -Status "Please wait"
     $errors = @()
@@ -88,7 +88,7 @@ if (-not $args) {
     }
 
     # Verify script integrity
-    $releaseHash = 'D60752A27BDED6887C5CEC88503F0F975ACB5BC849673693CA7BA7C95BCB3EF4'
+    $releaseHash = '012A9054ABC6E510FD84677B9F66B9FC653B431F1EF4669E18018038A9018796'
     $stream = New-Object IO.MemoryStream
     $writer = New-Object IO.StreamWriter $stream
     $writer.Write($response)
