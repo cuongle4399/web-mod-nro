@@ -1,7 +1,2 @@
-Update 3.2.7
-- Thêm bên Auto cak chức năng nhập giờ OFF và giờ tự động online
-- Fix AutoLogin sau bảo trì (đm m lại bảo ko log nx đi)
-Update 3.2.6
-- Fix lỗi hình ảnh quái
-- Fix xmap bị kẹt làng về nhà
-- Fix train khi giảm FPS vẫn train ko bị giảm tốc độ. Cho giam cpu fps thấp nhất từ 30 xuống 3 ở QLTK dành cho mấy con lợn cố chấp train quái trong vps. siêu nhẹ :))
+-Tiếp tục seri fix xmap tới trĩ lỗ đít
+- Fix Autologin cho mượt 
