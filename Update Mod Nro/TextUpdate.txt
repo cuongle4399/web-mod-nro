@@ -1,2 +1,2 @@
--Tiếp tục seri fix xmap tới trĩ lỗ đít. M crash nx di cho bố xem
-- Fix Autologin cho mượt 
+- Cải tiến Auto yardat 
+- Thêm TYPE train ak dame[không bị phụ thuộc vào fps] và mặc định
