@@ -1,2 +1,3 @@
 - Cải tiến Auto yardat 
 - Thêm TYPE train ak dame[không bị phụ thuộc vào fps] và mặc định
+- Fix font chữ lỡ để font chữ quay video cho nét quên chỉnh lại kk
