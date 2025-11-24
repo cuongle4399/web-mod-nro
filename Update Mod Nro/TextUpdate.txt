@@ -1,4 +1,3 @@
-- Fix autologin sau bảo trì(dm lần thứ n)
 - Fix chức năng search tìm kiếm item ko click dc (bình thường là phải ấn phím delete với enter để tìm với đóng)
 - Fix tý train trừ ki hơi lố
 ==> Lỗi mod ae báo cho Cường nhé! đừng ngại, xok toàn bộ lỗi sẽ update thêm auto mới vào mod
