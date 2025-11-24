@@ -1,3 +1,6 @@
+Update 3.3.3
+- Fix triệt autologin sau bảo trì 100% đã test
+Update 3.3.2
 - Fix chức năng search tìm kiếm item ko click dc (bình thường là phải ấn phím delete với enter để tìm với đóng)
 - Fix tý train trừ ki hơi lố
 ==> Lỗi mod ae báo cho Cường nhé! đừng ngại, xok toàn bộ lỗi sẽ update thêm auto mới vào mod
