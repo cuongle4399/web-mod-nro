@@ -1,3 +1,5 @@
+Update 3.3.7
+- Fix lỗi tải dữ lieu do login spam
 Update 3.3.6
 - fix tý login 4 lần mới vào game. Tuyệt vọng luôn mọe r
 - Fix goback ko ăn gà
