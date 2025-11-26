@@ -1,3 +1,5 @@
+Update 3.3.8
+- Thêm cơ chế tái tạo login nếu bị đơ quá 5p
 Update 3.3.7
 - Fix lỗi tải dữ lieu do login spam
 Update 3.3.6
