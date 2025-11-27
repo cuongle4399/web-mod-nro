@@ -1,9 +1,4 @@
-Update 3.3.8
-- Thêm cơ chế tái tạo login nếu bị đơ quá 5p
-Update 3.3.7
-- Fix lỗi tải dữ lieu do login spam
-Update 3.3.6
-- fix tý login 4 lần mới vào game. Tuyệt vọng luôn mọe r
-- Fix goback ko ăn gà
-- Fix auto bo mong - nv pem người cờ đen bớt ngu lại.
-Lưu ý: mấy má tải mod rồi mà lỗi ko tự update tự động dc thì vào ổ đĩa C tạo 1 thư muc xok bỏ mod vào thư mục đó thì sẽ update tự động dc
+Update 3.3.9
+- Bug có thể sài skill được khi bị choáng
+- Tối ưu auto skill sài skill chuẩn theo thời gian hồi chiêu
+- Thêm mở menu khi click vào phần hp ki của game góc trái bên trên màn hình
