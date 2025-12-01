@@ -1,4 +1,8 @@
-Update 3.3.9
-- Bug có thể sài skill được khi bị choáng
-- Tối ưu auto skill sài skill chuẩn theo thời gian hồi chiêu
-- Thêm mở menu khi click vào phần hp ki của game góc trái bên trên màn hình
+- test autologin (đừng hy vọng làm gì)
+- Thêm auto tách hợp thể ở auto up đệ
+- Thêm cấu hình chỉ train quái hp lớn hơn bao nhiêu HP đó 
+- Thêm cấu hình chỉ train quái hp nhỏ hơn bao nhiêu HP đó 
+- Fix auto Skill sài skill chuẩn ko bị sịt
+- Thêm loại khu ít ở menu train : loại như cũ là spam vào khu ít (spam liên tục) và 1 loại là auto khu ít (chỉ đổi khu khi tìm dc khu vắng hơn khu hiện tại)
+
+
