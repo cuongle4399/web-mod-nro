@@ -4,5 +4,6 @@
 - Thêm cấu hình chỉ train quái hp nhỏ hơn bao nhiêu HP đó 
 - Fix auto Skill sài skill chuẩn ko bị sịt
 - Thêm loại khu ít ở menu train : loại như cũ là spam vào khu ít (spam liên tục) và 1 loại là auto khu ít (chỉ đổi khu khi tìm dc khu vắng hơn khu hiện tại)
+- Lắp thêm chức năng vào phần autoTrain ở QLTK cho tiện setting nếu ae sài trên VPS (djt mọe mod đừng bê vào sài trong vps nx )
 
 
