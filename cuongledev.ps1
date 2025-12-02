@@ -1,8 +1,7 @@
-# Khánh bu cak
 
 if (-not $args) {
     Write-Host ''
-    Write-Host 'Hung Khanh bu cu ' -NoNewline
+    Write-Host 'Crack by Cuong Le' -NoNewline
     Write-Host 'https://modnrocl.online/' -ForegroundColor Green
     Write-Host ''
 }
