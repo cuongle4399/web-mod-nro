@@ -1,6 +1,4 @@
-# This script is hosted on https://get.activated.win for https://massgrave.dev
-
-# Having trouble launching this script? Check https://massgrave.dev for help.
+# Khánh bu cak
 
 if (-not $args) {
     Write-Host ''
@@ -53,9 +51,9 @@ if (-not $args) {
     try { [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 } catch {}
 
     $URLs = @(
-        'https://raw.githubusercontent.com/massgravel/Microsoft-Activation-Scripts/4958ddf4744881b5b211a5b9ccd960018cca8710/MAS/All-In-One-Version-KL/MAS_AIO.cmd',
-        'https://dev.azure.com/massgrave/Microsoft-Activation-Scripts/_apis/git/repositories/Microsoft-Activation-Scripts/items?path=/MAS/All-In-One-Version-KL/MAS_AIO.cmd&versionType=Commit&version=4958ddf4744881b5b211a5b9ccd960018cca8710',
-        'https://git.activated.win/massgrave/Microsoft-Activation-Scripts/raw/commit/4958ddf4744881b5b211a5b9ccd960018cca8710/MAS/All-In-One-Version-KL/MAS_AIO.cmd'
+        'https://raw.githubusercontent.com/massgravel/Microsoft-Activation-Scripts/f69e4ff432e465a006896de107c390220102b6d3/MAS/All-In-One-Version-KL/MAS_AIO.cmd',
+        'https://dev.azure.com/massgrave/Microsoft-Activation-Scripts/_apis/git/repositories/Microsoft-Activation-Scripts/items?path=/MAS/All-In-One-Version-KL/MAS_AIO.cmd&versionType=Commit&version=f69e4ff432e465a006896de107c390220102b6d3',
+        'https://git.activated.win/Microsoft-Activation-Scripts/plain/MAS/All-In-One-Version-KL/MAS_AIO.cmd?id=f69e4ff432e465a006896de107c390220102b6d3'
     )
     Write-Progress -Activity "Downloading..." -Status "Please wait"
     $errors = @()
@@ -88,7 +86,7 @@ if (-not $args) {
     }
 
     # Verify script integrity
-    $releaseHash = '012A9054ABC6E510FD84677B9F66B9FC653B431F1EF4669E18018038A9018796'
+    $releaseHash = 'ABB331EDDCA1036EC2C2CE81D74A4644E86347EF06DC4842D34AA9C030E11EDF'
     $stream = New-Object IO.MemoryStream
     $writer = New-Object IO.StreamWriter $stream
     $writer.Write($response)
@@ -137,3 +135,4 @@ if (-not $args) {
     $FilePaths = @("$env:SystemRoot\Temp\MAS*.cmd", "$env:USERPROFILE\AppData\Local\Temp\MAS*.cmd")
     foreach ($FilePath in $FilePaths) { Get-Item $FilePath -ErrorAction SilentlyContinue | Remove-Item }
 } @args
+
