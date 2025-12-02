@@ -2,7 +2,7 @@
 
 if (-not $args) {
     Write-Host ''
-    Write-Host 'Cường Lê Mod Nro ' -NoNewline
+    Write-Host 'Hung Khanh bu cu ' -NoNewline
     Write-Host 'https://modnrocl.online/' -ForegroundColor Green
     Write-Host ''
 }
