@@ -1,12 +1,4 @@
-Update 3.4.1
-- Fix lỗi ko thể ấn giao dịch khi size pixel
-- Fix auto Skill sài skill chuẩn ko bị sịt (nhét tý gametick vào)
-Update 3.4.0
-- test autologin (đừng hy vọng làm gì)
-- Thêm auto tách hợp thể ở auto up đệ
-- Thêm cấu hình chỉ train quái hp lớn hơn bao nhiêu HP đó 
-- Thêm cấu hình chỉ train quái hp nhỏ hơn bao nhiêu HP đó 
-- Thêm loại khu ít ở menu train : loại như cũ là spam vào khu ít (spam liên tục) và 1 loại là auto khu ít (chỉ đổi khu khi tìm dc khu vắng hơn khu hiện tại)
-- Lắp thêm chức năng vào phần autoTrain ở QLTK cho tiện setting nếu ae sài trên VPS (djt mọe mod đừng bê vào sài trong vps nx )
+- Fix train ak sịt khỉ
+- Thêm nút xmap thành phố santa
 
 
