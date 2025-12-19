@@ -2,5 +2,6 @@
 - Hỗ trợ CapCha toàn bộ web (đặc biệt có 1 web api Capcha free gần như vĩnh viễn nếu ae spam tạo tài khoản mỗi tháng)
 - Sửa chút search item bị lỗi mất ảnh close khi search null
 - Update luôn server SUPER 3 trước để ae 20/12 đua top
+-nếu Update tự động bị lỗi , hãy đem mod bỏ vào 1 thư mục ở đâu cũng được xong xóa hết toàn bộ file trừ cái UpdateMod.exe xong click nó là được, nó lỗi là do không đủ quyền để xóa file đó
 
 
