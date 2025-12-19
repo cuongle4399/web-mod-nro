@@ -1,4 +1,6 @@
-- Fix train ak sịt khỉ
-- Thêm nút xmap thành phố santa
+- Tối ưu thuật toán Xmap, Auto Train
+- Hỗ trợ CapCha toàn bộ web (đặc biệt có 1 web api Capcha free gần như vĩnh viễn nếu ae spam tạo tài khoản mỗi tháng)
+- Sửa chút search item bị lỗi mất ảnh close khi search null
+- Update luôn server SUPER 3 trước để ae 20/12 đua top
 
 
