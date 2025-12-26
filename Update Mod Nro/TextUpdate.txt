@@ -1,7 +1,7 @@
-- Tối ưu thuật toán Xmap, Auto Train
-- Hỗ trợ CapCha toàn bộ web (đặc biệt có 1 web api Capcha free gần như vĩnh viễn nếu ae spam tạo tài khoản mỗi tháng)
-- Sửa chút search item bị lỗi mất ảnh close khi search null
-- Update luôn server SUPER 3 trước để ae 20/12 đua top
--nếu Update tự động bị lỗi , hãy đem mod bỏ vào 1 thư mục ở đâu cũng được xong xóa hết toàn bộ file trừ cái UpdateMod.exe xong click nó là được, nó lỗi là do không đủ quyền để xóa file đó
-
-
+- Fix auto bán đồ
+- Fix 1 chút login
+- Tối ưu Xmap, thêm mục nhập text Npc khi có sự kiện như halloween để confirm và thêm map sk noel nhập ở QLTK/ Home 
+- Fix lỗi giải capcha
+- Thêm chức năng tự mở lại game khi bị lỗi hoặc crash (tích acc ở phần QLTK xong bật auto mở tab khi mở nó sẽ tự mở và send lại cấu hình đã ON chỉ trên QLTK) [chỉ là bản thử nghiệm , vẫn còn nhiều lỗi]
+- Thêm chức năng nhà phát triển (ae chơi mod đừng quan tâm và cũng đừng bật làm gì, này để Cường lấy ip server với viết code thôi)
+- Thêm auto vứt vào QLTK / autotrain
