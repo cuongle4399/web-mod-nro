@@ -1,3 +1,6 @@
+Update 3.4.5
+_ Fix lỗi capcha no reposen
+Thông tin update 3.4.4
 - Fix auto bán đồ
 - Fix 1 chút login
 - Tối ưu Xmap, thêm mục nhập text Npc khi có sự kiện như halloween để confirm và thêm map sk noel nhập ở QLTK/ Home 
