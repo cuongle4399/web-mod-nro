@@ -1,10 +1,3 @@
-Update 3.4.5
-_ Fix lỗi capcha no reposen
-Thông tin update 3.4.4
-- Fix auto bán đồ
-- Fix 1 chút login
-- Tối ưu Xmap, thêm mục nhập text Npc khi có sự kiện như halloween để confirm và thêm map sk noel nhập ở QLTK/ Home 
-- Fix lỗi giải capcha
-- Thêm chức năng tự mở lại game khi bị lỗi hoặc crash (tích acc ở phần QLTK xong bật auto mở tab khi mở nó sẽ tự mở và send lại cấu hình đã ON chỉ trên QLTK) [chỉ là bản thử nghiệm , vẫn còn nhiều lỗi]
-- Thêm chức năng nhà phát triển (ae chơi mod đừng quan tâm và cũng đừng bật làm gì, này để Cường lấy ip server với viết code thôi)
-- Thêm auto vứt vào QLTK / autotrain
+- Thêm hiển thị % Cpu và % Ram của máy và của tab game [phần khác của QLTK]
+- Fix lỗi menu click ngoài không tự đóng
+- fix lỗi vặt và xmap noel
