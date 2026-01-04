@@ -1,3 +1,2 @@
-- Thêm hiển thị % Cpu và % Ram của máy và của tab game [phần khác của QLTK]
-- Fix lỗi menu click ngoài không tự đóng
-- fix lỗi vặt và xmap noel
+- Fix lỗi chức năng tự động update mod Pc
+- Thêm delay giữ xmap confirm index npc (fix xmap nhanh từ thần diện tới bill)
