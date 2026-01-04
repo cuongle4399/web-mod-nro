@@ -1,2 +1,2 @@
-- Fix lỗi chức năng tự động update mod Pc
+- Fix lỗi chức năng tự động update mod Pc (test nhanh chức năng có hoạt động không xóa file version và bấm file update.exe nếu không update được ae báo mình nha)
 - Thêm delay giữ xmap confirm index npc (fix xmap nhanh từ thần diện tới bill)
