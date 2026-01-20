@@ -1,6 +1,3 @@
-- Thêm auto check lag (phần lá bài mob train có nút bấm) khi quá 5 phút mà tiềm năng không tăng sẽ out ra zo lại
-- Fix Auto farm boss nappa bỏ sót item không nhặt, nút né siêu quái hiện sai trạng thái, fix Xmap 1 số lỗi và chậm tý chống ban acc, hạn chế spam login
-- Thêm QLTK nút bật auto giải capcha, check lag
-- Paint thêm HSD bên shop để quay vòng quay thượng đế còn check và sửa 1chut màu tý HSD lại cho đẹp
-- Thêm nút auto cộng chỉ số khi nút bên mục cộng số (hành trang tab kỹ năng) cộng theo thuật toán thông minh nhanh hơn.
-- Thêm tổ hợp phím Shift + T tự tháo giáp luyện tập
+-Fix xmap chậm tý tránh lỗi map thành phố vegeta-> thung lũng nappa
+- Fix lỗi cắp capcha 1 lần tận 2 nháy- Thêm QLTK nút bật auto giải capcha, check lag
+- Fix lỗi scroll hành trang shop bán đồ size pixel
