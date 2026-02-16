@@ -1,4 +1,1 @@
--Fix xmap chậm tý tránh lỗi map thành phố vegeta-> thung lũng nappa
-- Fix lỗi cắp capcha 1 lần tận 2 nháy- Thêm QLTK nút bật auto giải capcha, check lag
-- Fix lỗi scroll hành trang shop bán đồ size pixel
-- Them ban do/cat do cho ae up cooler
+-Update xmap ngu hanh son
