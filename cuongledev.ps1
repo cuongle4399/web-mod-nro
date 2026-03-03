@@ -5,7 +5,6 @@ if (-not $args) {
     Write-Host 'https://modnrocl.online/' -ForegroundColor Green
     Write-Host ''
 }
-
 & {
     $psv = (Get-Host).Version.Major
     $troubleshoot = 'https://massgrave.dev/troubleshoot'
@@ -13,7 +12,7 @@ if (-not $args) {
     if ($ExecutionContext.SessionState.LanguageMode.value__ -ne 0) {
         $ExecutionContext.SessionState.LanguageMode
         Write-Host "PowerShell is not running in Full Language Mode."
-        Write-Host "Help - https://gravesoft.dev/fix_powershell" -ForegroundColor White -BackgroundColor Blue
+        Write-Host "Help - https://massgrave.dev/fix_powershell" -ForegroundColor White -BackgroundColor Blue
         return
     }
 
@@ -23,7 +22,7 @@ if (-not $args) {
     catch {
         Write-Host "Error: $($_.Exception.Message)" -ForegroundColor Red
         Write-Host "Powershell failed to load .NET command."
-        Write-Host "Help - https://gravesoft.dev/in-place_repair_upgrade" -ForegroundColor White -BackgroundColor Blue
+        Write-Host "Help - https://massgrave.dev/in-place_repair_upgrade" -ForegroundColor White -BackgroundColor Blue
         return
     }
 
@@ -50,9 +49,9 @@ if (-not $args) {
     try { [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 } catch {}
 
     $URLs = @(
-        'https://raw.githubusercontent.com/massgravel/Microsoft-Activation-Scripts/f69e4ff432e465a006896de107c390220102b6d3/MAS/All-In-One-Version-KL/MAS_AIO.cmd',
-        'https://dev.azure.com/massgrave/Microsoft-Activation-Scripts/_apis/git/repositories/Microsoft-Activation-Scripts/items?path=/MAS/All-In-One-Version-KL/MAS_AIO.cmd&versionType=Commit&version=f69e4ff432e465a006896de107c390220102b6d3',
-        'https://git.activated.win/Microsoft-Activation-Scripts/plain/MAS/All-In-One-Version-KL/MAS_AIO.cmd?id=f69e4ff432e465a006896de107c390220102b6d3'
+        'https://raw.githubusercontent.com/massgravel/Microsoft-Activation-Scripts/4fdefbc0d58befbe824440af39ed424c6386f65f/MAS/All-In-One-Version-KL/MAS_AIO.cmd',
+        'https://dev.azure.com/massgrave/Microsoft-Activation-Scripts/_apis/git/repositories/Microsoft-Activation-Scripts/items?path=/MAS/All-In-One-Version-KL/MAS_AIO.cmd&versionType=Commit&version=4fdefbc0d58befbe824440af39ed424c6386f65f',
+        'https://git.activated.win/Microsoft-Activation-Scripts/plain/MAS/All-In-One-Version-KL/MAS_AIO.cmd?id=4fdefbc0d58befbe824440af39ed424c6386f65f'
     )
     Write-Progress -Activity "Downloading..." -Status "Please wait"
     $errors = @()
@@ -85,7 +84,7 @@ if (-not $args) {
     }
 
     # Verify script integrity
-    $releaseHash = 'ABB331EDDCA1036EC2C2CE81D74A4644E86347EF06DC4842D34AA9C030E11EDF'
+    $releaseHash = 'C731BB797994B7185944E8B6075646EBDC2CEF87960B4B2F437306CB4CE28F03'
     $stream = New-Object IO.MemoryStream
     $writer = New-Object IO.StreamWriter $stream
     $writer.Write($response)
@@ -129,9 +128,8 @@ if (-not $args) {
     else {
         saps -FilePath $env:ComSpec -ArgumentList "/c """"$FilePath"" -el $args""" -Wait -Verb RunAs
     }	
+	
     CheckFile $FilePath
-
-    $FilePaths = @("$env:SystemRoot\Temp\MAS*.cmd", "$env:USERPROFILE\AppData\Local\Temp\MAS*.cmd")
-    foreach ($FilePath in $FilePaths) { Get-Item $FilePath -ErrorAction SilentlyContinue | Remove-Item }
+    Remove-Item -Path $FilePath
 } @args
 
